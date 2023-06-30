@@ -1,0 +1,22 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+:root {
+    --dark-color: #141414;
+    --green-color: #A1C487;
+    --light-green-color: #EAF7E5;
+    --orange-color: #FC8A11;
+    --light-orange-color: #FAF3E7;
+    --light-gray-color: #F3F3F3;
+    --hero-btn-hover-color: #F9F7F4;
+}
+
+.container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+}
