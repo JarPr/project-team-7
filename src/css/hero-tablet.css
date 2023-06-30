@@ -1,0 +1,32 @@
+/* TABLET */
+@media screen and (min-width: 376px) {
+  .container {
+    max-width: 767px;
+  }
+  .avatars {
+    padding-bottom: 16px;
+  }
+  .avatar-button {
+    width: 54px;
+    height: 54px;
+    margin-left: -22px;
+  }
+  .hero-header {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+  .shop-now-button {
+    width: 114px;
+    height: 114px;
+    font-size: 24px;
+    line-height: 1;
+  }
+  .button-filter {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+}
