@@ -3,6 +3,9 @@
   .container {
     max-width: 768px;
   }
+  .hero {
+    padding-top: 114px;
+  }
   .avatars {
     padding-bottom: 16px;
   }
@@ -21,12 +24,24 @@
     height: 114px;
     font-size: 24px;
     line-height: 1;
+    letter-spacing: -0.96px;
   }
   .button-filter {
     padding: 10px 20px;
     font-size: 12px;
   }
+
+  .hero-filters-wrapper {
+    max-width: 209px;
+  }
 }
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
+  .shop-now-button {
+    width: 132px;
+    height: 132px;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -1.12px;
+  }
 }
