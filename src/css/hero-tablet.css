@@ -1,7 +1,7 @@
 /* TABLET */
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 767px;
+    max-width: 768px;
   }
   .avatars {
     padding-bottom: 16px;
