@@ -2,9 +2,11 @@
   padding-top: 64px;
   padding-bottom: 32px;
 }
+
 .hero-background {
   background-color: var(--green-color);
 }
+
 .avatars {
   display: inline-flex;
   flex-direction: row;
@@ -32,6 +34,7 @@
   overflow: hidden;
   border-radius: 50%;
 }
+
 .img {
   display: inline;
   height: 100%;
@@ -42,6 +45,7 @@
   background-color: #fff;
   color: var(--dark-color);
 }
+
 .last-avatar-text {
   text-align: center;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
@@ -55,6 +59,7 @@
   margin-top: 10px;
   margin-bottom: 2px;
 }
+
 .last-avatar-text2 {
   display: block;
   color: var(--dark-color);
@@ -84,6 +89,7 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
 }
+
 .shop-now-button:hover {
   background-color: var(--light-green-color);
   color: var(--green-color);
@@ -99,6 +105,7 @@
   text-transform: uppercase;
   margin-bottom: 14px;
 }
+
 .hero-p {
   color: #fff;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
@@ -108,6 +115,7 @@
   letter-spacing: -0.56px;
   padding-bottom: 20px;
 }
+
 .hero-span {
   font-style: italic;
   color: var(--light-green-color);
@@ -119,6 +127,7 @@
   background: transparent;
   padding-bottom: 16px;
 }
+
 .button-filter {
   padding: 8px 14px;
   border-radius: 1000px;
@@ -130,22 +139,80 @@
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .hero-filters-wrapper {
   display: block;
   margin-left: auto;
   max-width: 180px;
 }
+
 .hero-filters {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
   gap: 8px 4px;
 }
+
 .button-filter:hover {
   background-color: #fff;
   color: var(--dark-color);
 }
+
 .button-filter:first-child {
   background-color: #fff;
   color: var(--dark-color);
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .hero {
+    padding-top: 114px;
+  }
+
+  .avatars {
+    padding-bottom: 16px;
+  }
+
+  .avatar {
+    width: 54px;
+    height: 54px;
+  }
+
+  .hero-header {
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 1.18;
+  }
+
+  .shop-now-button {
+    width: 114px;
+    height: 114px;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -0.96px;
+  }
+
+  .button-filter {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+
+  .hero-filters-wrapper {
+    max-width: 250px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .shop-now-button {
+    width: 132px;
+    height: 132px;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -1.12px;
+  }
 }
