@@ -19,5 +19,11 @@
             </li>
         </ol>
    </div>
-    <img srcset="./img/girl-in-red-hat-2x.png 2x" src="./img/girl-in-red-hat.png" alt="Camila Garcia" width="264" height="260">
+    <picture>
+        <source srcset="./img/girl-in-red-hat-desk.png 1x,
+                        ./img/girl-in-red-hat-desk-2x.png 2x" media="(min-width: 1280px)" width="434" height="420" />
+        <source srcset="./img/girl-in-red-hat-tab.png 1x,
+                        ./img/girl-in-red-hat-tab-2x.png 2x" media="(min-width: 768px)" width="350" height="446" />
+        <img srcset="./img/girl-in-red-hat-2x.png 2x" src="./img/girl-in-red-hat.png" alt="Girl in red hat with salad" width="258" height="319">
+    </picture>
 </div>
