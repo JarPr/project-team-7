@@ -10,9 +10,26 @@
 
 }
 
+
 .how-it-works-2{
-    margin-bottom: 80px;
+    padding: 40px 20px 0;
+    /* margin-bottom: 80px; */
+    background-color: var(--light-orange-color);
+    border-radius: 40px;
+
+    
+    background-image: url(./img/bg.png);
+    background-size: cover;     
 }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .how-it-works-2 {
+        background-image: url(../img/bg-2x.png);
+    }
+}
+
 
 .list-heading{
     color: var(--dark-color);
@@ -29,10 +46,17 @@
 
 }
 
+.ordered-list{
+    margin-bottom: 20px;
+}
+
+
 .ol-item{
     display: flex;
     gap: 14px;
+}
 
+.ol-item:not(:last-child){
     margin-bottom: 20px;
 }
 
@@ -70,15 +94,84 @@
     align-items: center;
     text-align: start;
 
+    width: 176px;
+
 }
 
 @media screen and (min-width: 768px) {
-.how-it-works-2 {
+    .how-it-works-2 {
         max-width: 704px;
+        border-radius: 80px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 40px;
+
+        background-image: url(../img/bg-tab.png);
+        
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .how-it-works-2 {
+            background-image: url(../img/bg-tab-2x.png);
+        }
+    }
+
+    .how-it-works-2-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    .list-heading{
+        font-size: 28px;
+        line-height: 1.14;
+        width: 274px;
+    }
+
+    .ordered-list {
+        margin-bottom: 80px;
+    }
+
+    .ol-number{
+        line-height: 1.33;
+    }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+    .how-it-works-2 {
+        max-width: 1216px;
+        gap: 110px;
+
+        background-image: url(../img/bg-deck.png);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .how-it-works-2 {
+            background-image: url(../img/bg-deck-2x.png);
+        }
+    }
+
     
 
-       display: flex;
-       flex-direction: row-reverse;
+    .list-heading {
+        font-size: 40px;
+        line-height: 1.10;
+        width: 512px;
+    }
+
+    .ol-item-text{
+        width: 289px;
+    }
+
+    .ol-item:nth-child(2) > .ol-item-text{
+        width: 166px;
     }
 
 }
