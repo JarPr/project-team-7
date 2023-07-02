@@ -116,7 +116,6 @@
 .hero-image {
   position: relative;
   background-image: url(../img/hero-image-optim.png);
-  z-index: 10000;
   background: transparent;
   padding-bottom: 16px;
 }
