@@ -6,14 +6,27 @@
   background-color: var(--green-color);
 }
 .avatars {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  padding-bottom: 14px;
 }
-.hero-header {
-  padding-bottom: 14px;
+
+.avatar {
+  position: relative;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 44px;
 }
+
+.avatar:not(:first-child) {
+  margin-left: -11px;
+}
+
+.avatar img {
+  width: 100%;
+  display: block;
+}
+
 .image-cropper {
   position: relative;
   overflow: hidden;
@@ -24,12 +37,7 @@
   height: 100%;
   width: auto;
 }
-.avatar-button {
-  margin-left: -12px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
+
 .last-avatar {
   background-color: #fff;
   color: var(--dark-color);
@@ -107,21 +115,10 @@
 
 .hero-image {
   position: relative;
-  background-image: url(../img/hero-image.jpeg);
+  background-image: url(../img/hero-image-optim.png);
   z-index: 10000;
   background: transparent;
   padding-bottom: 16px;
-}
-.hero-background-image {
-  position: absolute;
-  width: 219px;
-  height: 294px;
-  transform: rotate(-104.004deg);
-  border-radius: 500px;
-  background-color: var(--hero-btn-hover-color);
-  align-items: center;
-  z-index: -1;
-  overflow: hidden;
 }
 .button-filter {
   padding: 8px 14px;
@@ -132,11 +129,12 @@
   border: 1px solid #fff;
   font-size: 10px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 .hero-filters-wrapper {
   display: block;
   margin-left: auto;
-  max-width: 167px;
+  max-width: 180px;
 }
 .hero-filters {
   display: flex;
@@ -145,6 +143,10 @@
   gap: 8px 4px;
 }
 .button-filter:hover {
+  background-color: #fff;
+  color: var(--dark-color);
+}
+.button-filter:first-child {
   background-color: #fff;
   color: var(--dark-color);
 }

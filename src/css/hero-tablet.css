@@ -9,11 +9,11 @@
   .avatars {
     padding-bottom: 16px;
   }
-  .avatar-button {
+  .avatar {
     width: 54px;
     height: 54px;
-    margin-left: -22px;
   }
+
   .hero-header {
     font-size: 54px;
     font-weight: 500;
@@ -32,7 +32,7 @@
   }
 
   .hero-filters-wrapper {
-    max-width: 209px;
+    max-width: 250px;
   }
 }
 /* DESKTOP */
