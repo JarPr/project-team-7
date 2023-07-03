@@ -12,26 +12,28 @@
                 </svg>
                 <span class="header-logo-text">veggieboost</span></a>
         </nav>
-        <button type="button" class="header-basket-btn" data-modal-open>
+        <button type="button" class="header-basket-btn" data-order-modal-open>
             <svg class="basket-svg" width="20">
                 <use href=""></use>
             </svg>
         </button>
-        <button type="button" class="burger-btn" data-menu-open>
-            <svg class="burger-svg" width="20">
-                <use href=""></use>
-            </svg>
-        </button>
+        <div class="btn-container">
+            <button type="button" class="burger-btn" data-burger data-menu-open>
+                <svg class="burger-svg" width="20">
+                    <use href=""></use>
+                </svg>
+            </button>
+            <button type="button" class="close-menu-btn is-hidden" data-button data-menu-close>
+                <svg class="close-menu-icon" width="12" height="12">
+                    <use href=""></use>
+                </svg>
+            </button>
+        </div>
     </div>
 
 </header>
 <div class="menu-backdrop is-hidden" data-menu>
     <div class="menu-window">
-        <!-- <button type="button" class="close-menu-btn" data-menu-close>
-            <svg class="close-menu-icon" width="12" height="12">
-                <use href=""></use>
-            </svg>
-        </button> -->
         <ul class="menu-list">
             <li class="menu-list-item"><a class="menu-list-link" href="#how-it-works">How It Works</a></li>
             <li class="menu-list-item"><a class="menu-list-link" href="#vegetables">Vegetables</a></li>
