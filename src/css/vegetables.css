@@ -85,13 +85,21 @@
   margin: 0 auto;
   transition: background-color;
 }
+.wrapper-veg-btn {
+  display: flex;
+  /* align-items: center; */
 
+  justify-content: center;
+}
 .vegetables-btn:hover,
 .vegetables-btn:focus {
   background-color: var(--green-color);
 }
-
 .card-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
   color: var(--white-color);
   text-align: center;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
@@ -102,10 +110,11 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
 }
-
 .vegetables-icon {
+  position: relative;
+  bottom: -9px;
+  fill: var(--white-color);
 }
-
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -169,8 +178,8 @@
     line-height: 1.33px;
     letter-spacing: -0.36px;
   }
-
   .card-btn-text {
+    /* margin-right: -18px; */
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
@@ -181,6 +190,11 @@
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
+  }
+  .vegetables-icon {
+    position: relative;
+    bottom: -14px;
+    fill: var(--white-color);
   }
 }
 
