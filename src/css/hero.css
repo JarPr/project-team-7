@@ -13,7 +13,7 @@
 }
 
 .avatar {
-  border: 2px solid #fff;
+  border: 2px solid var(--white-color);
   border-radius: 50%;
   overflow: hidden;
   width: 44px;
@@ -24,7 +24,7 @@
 }
 
 .last-avatar {
-  background-color: #fff;
+  background-color: var(--white-color);
   color: var(--dark-color);
 }
 
@@ -78,7 +78,7 @@
 }
 
 .hero-header {
-  color: #fff;
+  color: var(--white-color);
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
   font-size: 40px;
   font-weight: 500;
@@ -89,7 +89,7 @@
 }
 
 .hero-p {
-  color: #fff;
+  color: var(--white-color);
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   font-weight: 400;
@@ -116,7 +116,7 @@
   border-color: var(--hero-btn-hover-color);
   color: var(--hero-btn-hover-color);
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid var(--white-color);
   font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
@@ -136,12 +136,12 @@
 }
 
 .button-filter:hover {
-  background-color: #fff;
+  background-color: var(--white-color);
   color: var(--dark-color);
 }
 
 .button-filter:first-child {
-  background-color: #fff;
+  background-color: var(--white-color);
   color: var(--dark-color);
 }
 /* HERO-TABLET */
