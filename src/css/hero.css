@@ -15,6 +15,7 @@
 .avatars {
   display: inline-flex;
   flex-direction: row;
+  margin-bottom: 14px;
 }
 
 .avatar {
@@ -109,9 +110,6 @@
 }
 
 .hero-image {
-  position: relative;
-  background-image: url(../img/hero-image-optim.png);
-  background: transparent;
   padding-bottom: 16px;
 }
 
@@ -159,8 +157,22 @@
     padding-top: 66px;
     position: relative;
   }
+  .hero-p {
+    width: 490px;
+  }
+  .hero-image {
+    display: block;
+    width: 466px;
+    align-items: center;
+  }
+  .hero-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .avatars {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
   .avatar {
     width: 54px;
@@ -179,10 +191,12 @@
     line-height: 1;
     letter-spacing: -0.96px;
     margin-bottom: 8px;
+    cursor: pointer;
   }
   .button-filter {
     padding: 10px 20px;
     font-size: 12px;
+    cursor: pointer;
   }
 
   .hero-filters-wrapper {
@@ -220,6 +234,12 @@
 
   .hero {
     padding-top: 134px;
+  }
+  .hero-p {
+    width: 491px;
+  }
+  .hero-image {
+    width: auto;
   }
   .avatars {
     padding-bottom: 16px;
@@ -278,6 +298,6 @@
   .hero-box2 {
     position: absolute;
     top: 133px;
-    right: 0px;
+    right: -32px;
   }
 }
