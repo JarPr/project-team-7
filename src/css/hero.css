@@ -2,6 +2,11 @@
   padding-top: 64px;
   padding-bottom: 32px;
 }
+.hero-container {
+  padding-top: 48px;
+  position: relative;
+  padding-bottom: 32px;
+}
 
 .hero-background {
   background-color: var(--green-color);
@@ -20,7 +25,7 @@
 }
 
 .avatar:not(:first-child) {
-  margin-left: -11px;
+  margin-left: -16px;
 }
 
 .last-avatar {
@@ -149,8 +154,10 @@
   .container {
     max-width: 768px;
   }
-  .hero {
-    padding-top: 114px;
+
+  .hero-container {
+    padding-top: 66px;
+    position: relative;
   }
   .avatars {
     padding-bottom: 16px;
@@ -196,12 +203,21 @@
     line-height: 1.2;
     letter-spacing: -0.4px;
   }
+  .avatar:not(:first-child) {
+    margin-left: -19px;
+  }
 }
 /* HERO-DESKTOP*/
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
+  .hero-container {
+    padding-top: 133px;
+    position: relative;
+    padding-bottom: 32px;
+  }
+
   .hero {
     padding-top: 134px;
   }
@@ -212,7 +228,9 @@
     width: 70px;
     height: 70px;
   }
-
+  .avatar:not(:first-child) {
+    margin-left: -25px;
+  }
   .hero-header {
     font-size: 64px;
     font-weight: 500;
@@ -260,6 +278,6 @@
   .hero-box2 {
     position: absolute;
     top: 133px;
-    right: 32px;
+    right: 0px;
   }
 }
