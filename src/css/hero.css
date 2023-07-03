@@ -23,25 +23,6 @@
   margin-left: -11px;
 }
 
-/* .avatar img {
-  width: 100%;
-  display: block;
-} */
-
-/* .image-cropper {
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-} */
-/* .img {
-}
-
-.img {
-  display: inline;
-  height: 100%;
-  width: auto;
-} */
-
 .last-avatar {
   background-color: #fff;
   color: var(--dark-color);
