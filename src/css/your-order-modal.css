@@ -58,7 +58,7 @@
     height: 24px;
     border: none;
     background-color: inherit;
-    animation: animate125 3000ms infinite 1000ms;
+    transition: stroke var(--transition-duration-timing-function);
 }
 
 .order-modal-icon {
@@ -220,6 +220,7 @@
     background-color: var(--orange-color);
     border: none;
     outline: none;
+    transition: stroke var(--transition-duration-timing-function);
 }
 
 .order-modal-btn:hover,
