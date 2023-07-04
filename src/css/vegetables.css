@@ -83,7 +83,7 @@
   border: none;
   background-color: var(--orange-color);
   margin: 0 auto;
-  transition: background-color;
+  transition: background-color var(--transition-duration-timing-function);
 }
 .wrapper-veg-btn {
   display: flex;
