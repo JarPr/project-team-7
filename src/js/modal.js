@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }, false);
 
 
-    overlay.addEventListener('click', function() {
-        document.querySelector('.order-modal.active').classList.remove('active');
-        this.classList.remove('active');
-    });
+   //  overlay.addEventListener('click', function() {
+   //      document.querySelector('.order-modal.active').classList.remove('active');
+   //      this.classList.remove('active');
+   //  });
 
 
 
