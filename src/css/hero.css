@@ -246,8 +246,8 @@
     padding-bottom: 16px;
   }
   .avatar {
-    width: 70px;
-    height: 70px;
+    width: 66px;
+    height: 66px;
   }
   .avatar:not(:first-child) {
     margin-left: -25px;
