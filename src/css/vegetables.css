@@ -40,6 +40,7 @@
   background-color: var(--light-green-color);
   padding: 40px 25px 20px 18px;
   border-radius: 20px;
+  cursor: pointer;
 }
 .veg-img {
   height: 255px;
@@ -83,15 +84,23 @@
   border: none;
   background-color: var(--orange-color);
   margin: 0 auto;
-  transition: background-color;
+  transition: background-color var(--transition-duration-timing-function);
 }
+.wrapper-veg-btn {
+  display: flex;
+  /* align-items: center; */
 
+  justify-content: center;
+}
 .vegetables-btn:hover,
 .vegetables-btn:focus {
   background-color: var(--green-color);
 }
-
 .card-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4px;
   color: var(--white-color);
   text-align: center;
   text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
@@ -102,10 +111,11 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
 }
-
 .vegetables-icon {
+  position: relative;
+  bottom: -9px;
+  fill: var(--white-color);
 }
-
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -169,8 +179,8 @@
     line-height: 1.33px;
     letter-spacing: -0.36px;
   }
-
   .card-btn-text {
+    /* margin-right: -18px; */
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
@@ -181,6 +191,11 @@
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: -0.72px;
+  }
+  .vegetables-icon {
+    position: relative;
+    bottom: -14px;
+    fill: var(--white-color);
   }
 }
 
@@ -210,8 +225,14 @@
     max-width: 389px;
     width: 389px;
     padding: 64px 34px 24px 34px;
+    transition: box-shadow var(--transition-duration-timing-function);
   }
-
+  .vegetables-item:hover,
+  .vegetables-item:focus {
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
   .card-title {
     font-size: 32px;
     line-height: 1.19;
