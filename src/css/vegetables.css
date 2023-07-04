@@ -224,8 +224,14 @@
     max-width: 389px;
     width: 389px;
     padding: 64px 34px 24px 34px;
+    transition: box-shadow var(--transition-duration-timing-function);
   }
-
+  .vegetables-item:hover,
+  .vegetables-item:focus {
+    display: block;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
   .card-title {
     font-size: 32px;
     line-height: 1.19;
