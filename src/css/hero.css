@@ -2,6 +2,11 @@
   padding-top: 64px;
   padding-bottom: 32px;
 }
+.hero-container {
+  padding-top: 48px;
+  position: relative;
+  padding-bottom: 32px;
+}
 
 .hero-background {
   background-color: var(--green-color);
@@ -10,6 +15,7 @@
 .avatars {
   display: inline-flex;
   flex-direction: row;
+  margin-bottom: 14px;
 }
 
 .avatar {
@@ -20,7 +26,7 @@
 }
 
 .avatar:not(:first-child) {
-  margin-left: -11px;
+  margin-left: -16px;
 }
 
 .last-avatar {
@@ -104,9 +110,6 @@
 }
 
 .hero-image {
-  position: relative;
-  background-image: url(../img/hero-image-optim.png);
-  background: transparent;
   padding-bottom: 16px;
 }
 
@@ -149,11 +152,27 @@
   .container {
     max-width: 768px;
   }
-  .hero {
-    padding-top: 114px;
+
+  .hero-container {
+    padding-top: 66px;
+    position: relative;
   }
+  .hero-p {
+    width: 490px;
+  }
+  .hero-image {
+    display: block;
+    width: 466px;
+    align-items: center;
+  }
+  .hero-box2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .avatars {
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
   .avatar {
     width: 54px;
@@ -172,10 +191,12 @@
     line-height: 1;
     letter-spacing: -0.96px;
     margin-bottom: 8px;
+    cursor: pointer;
   }
   .button-filter {
     padding: 10px 20px;
     font-size: 12px;
+    cursor: pointer;
   }
 
   .hero-filters-wrapper {
@@ -196,14 +217,29 @@
     line-height: 1.2;
     letter-spacing: -0.4px;
   }
+  .avatar:not(:first-child) {
+    margin-left: -19px;
+  }
 }
 /* HERO-DESKTOP*/
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
   }
+  .hero-container {
+    padding-top: 133px;
+    position: relative;
+    padding-bottom: 32px;
+  }
+
   .hero {
     padding-top: 134px;
+  }
+  .hero-p {
+    width: 491px;
+  }
+  .hero-image {
+    width: auto;
   }
   .avatars {
     padding-bottom: 16px;
@@ -212,7 +248,9 @@
     width: 70px;
     height: 70px;
   }
-
+  .avatar:not(:first-child) {
+    margin-left: -25px;
+  }
   .hero-header {
     font-size: 64px;
     font-weight: 500;
@@ -260,6 +298,6 @@
   .hero-box2 {
     position: absolute;
     top: 133px;
-    right: 32px;
+    right: -32px;
   }
 }
