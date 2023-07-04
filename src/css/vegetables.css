@@ -40,6 +40,7 @@
   background-color: var(--light-green-color);
   padding: 40px 25px 20px 18px;
   border-radius: 20px;
+  cursor: pointer;
 }
 .veg-img {
   height: 255px;
