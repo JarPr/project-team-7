@@ -299,6 +299,6 @@
   .hero-box2 {
     position: absolute;
     top: 133px;
-    right: -32px;
+    right: 32px;
   }
 }
